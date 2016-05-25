@@ -1,0 +1,48 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta http-equiv="Content-Security-Policy" content="default-src * data:; style-src * 'unsafe-inline'; script-src * 'unsafe-inline' 'unsafe-eval'">
+    <script src="components/loader.js"></script>
+    <script src="lib/onsenui/js/onsenui.min.js"></script>
+    <script src="test.js"></script>
+
+    <link rel="stylesheet" href="components/loader.css">
+    <link rel="stylesheet" href="lib/onsenui/css/onsenui.css">
+    <link rel="stylesheet" href="lib/onsenui/css/onsen-css-components.css">
+
+    <script>
+
+    </script>
+</head>
+<body>
+<ons-page>
+
+<ons-page>
+  <ons-toolbar>
+    <div class="center">BMI計算</div>
+  </ons-toolbar>
+
+  <div style="text-align: center">
+
+    <section style="padding: 8px">
+      <input type="text" class="text-input" ng-model="text" id="tall"  placeholder="身長を入力してください" style="display: block; width: 100%">
+    </section>
+
+    <section style="padding: 8px">
+      <input type="text" class="text-input" ng-model="text" id="weight" placeholder="体重を入力してください" style="display: block; width: 100%">
+    </section>
+    
+    <section style="padding: 8px">
+      <input type="text" class="text-input" ng-model="text" id="bmi" onChange="bmi()" style="display: block; width: 100%">
+    </section>
+    
+    <section style="padding: 0 8px 8px">
+      <ons-button onClick="bmi()" modifier="large">BMI計算</ons-button>
+    </section>
+    
+  </div>
+
+</body>
+</html>
